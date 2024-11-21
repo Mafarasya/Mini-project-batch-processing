@@ -1,6 +1,6 @@
 # ETL Batch Processing
 
-ETL Batch Processing ini adalah sebuah proyek Python yang anggapannya digunakan untuk mengekstrak, mentransformasi, dan memuat data ke data warehouse (DWH). Proyek ini mengautomasi proses ETL dalam bentuk batch, mendukung koneksi ke database PostgreSQL, dan memanfaatkan berbagai library seperti Pandas, SQLAlchemy, dan psycopg2 untuk memproses data dalam batch.
+ETL Batch Processing ini adalah sebuah proyek Python sederhana yang anggapannya digunakan untuk mengekstrak, mentransformasi, dan memuat data ke data warehouse (DWH). Proyek ini mengautomasi proses ETL dalam bentuk batch, mendukung koneksi ke database PostgreSQL, dan memanfaatkan berbagai library seperti Pandas, SQLAlchemy, dan psycopg2 untuk memproses data dalam batch.
 
 
 ## 🚀 Fitur
