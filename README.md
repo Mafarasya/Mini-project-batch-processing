@@ -16,20 +16,16 @@ ETL Batch Processing ini adalah sebuah proyek Python yang digunakan untuk mengek
 - Pandas
 - SQLAlchemy
 - SQLParse
-
-
+  
 
 ## 📂 Struktur Proyek
+├── query/ 
+    ├── query.sql # Query SQL untuk membaca data dari sumber 
+    ├── dwh_design.sql # Query untuk mendesain skema DWH 
+├── main.py # Script utama ETL 
+├── connection.py # Modul untuk koneksi ke database 
+├── requirements.txt # Dependencies yang diperlukan untuk menjalankan proyek
 
-Berikut adalah contoh README.md untuk kode ETL yang Anda bagikan:
-
-markdown
-Copy code
-# ETL Service
-
-ETL Service adalah sebuah script Python sederhana untuk mengekstrak data dari database sumber, melakukan transformasi data, dan memuatnya ke database data warehouse (DWH). Script ini dirancang untuk menangani proses ETL secara otomatis menggunakan library populer seperti Pandas dan SQLAlchemy.
-
----
 
 ## 🚀 Fitur
 - **Koneksi Database**: Mendukung koneksi ke database sumber dan DWH.
@@ -44,17 +40,6 @@ ETL Service adalah sebuah script Python sederhana untuk mengekstrak data dari da
 - Pandas
 - SQLAlchemy
 - SQLParse
-
-
-
-## 📂 Struktur Proyek
-├── query/ 
-    ├── query.sql # Query SQL untuk membaca data dari sumber 
-    ├── dwh_design.sql # Query untuk mendesain skema DWH 
-├── main.py # Script utama ETL 
-├── connection.py # Modul untuk koneksi ke database 
-├── requirements.txt # Dependencies yang diperlukan untuk menjalankan proyek
-
 
 
 ### Jalankan script berikut untuk menginstall dependencies
