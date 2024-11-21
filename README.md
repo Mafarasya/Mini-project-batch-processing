@@ -2,7 +2,6 @@
 
 ETL Batch Processing ini adalah sebuah proyek Python yang digunakan untuk mengekstrak, mentransformasi, dan memuat data ke data warehouse (DWH). Proyek ini mengautomasi proses ETL dalam bentuk batch, mendukung koneksi ke database PostgreSQL, dan memanfaatkan berbagai library seperti Pandas, SQLAlchemy, dan psycopg2 untuk memproses data dalam batch.
 
----
 
 ## 🚀 Fitur
 - **Koneksi Database**: Mendukung koneksi ke database sumber dan DWH.
@@ -10,7 +9,7 @@ ETL Batch Processing ini adalah sebuah proyek Python yang digunakan untuk mengek
 - **Transformasi Data**: Menggunakan Pandas untuk manipulasi dan analisis data (dapat dikembangkan lebih lanjut).
 - **Ingestion ke DWH**: Memuat data hasil transformasi ke DWH.
 
----
+
 
 ## 🛠️ Teknologi
 - Python 3.12
@@ -18,7 +17,7 @@ ETL Batch Processing ini adalah sebuah proyek Python yang digunakan untuk mengek
 - SQLAlchemy
 - SQLParse
 
----
+
 
 ## 📂 Struktur Proyek
 
@@ -38,7 +37,7 @@ ETL Service adalah sebuah script Python sederhana untuk mengekstrak data dari da
 - **Transformasi Data**: Menggunakan Pandas untuk manipulasi dan analisis data (dapat dikembangkan lebih lanjut).
 - **Ingestion ke DWH**: Memuat data hasil transformasi ke DWH.
 
----
+
 
 ## 🛠️ Teknologi
 - Python
@@ -46,7 +45,7 @@ ETL Service adalah sebuah script Python sederhana untuk mengekstrak data dari da
 - SQLAlchemy
 - SQLParse
 
----
+
 
 ## 📂 Struktur Proyek
 ├── query/ 
@@ -56,14 +55,14 @@ ETL Service adalah sebuah script Python sederhana untuk mengekstrak data dari da
 ├── connection.py # Modul untuk koneksi ke database 
 ├── requirements.txt # Dependencies yang diperlukan untuk menjalankan proyek
 
----
+
 
 ### Jalankan script berikut untuk menginstall dependencies
 ```
 pip install -r requirements.txt
 ```
 
----
+
 
 ## ⚙️ Konfigurasi
 ### 1.Buat file `config.json`
@@ -92,7 +91,7 @@ Contoh formatnya adalah sebagai berikut:
 - `query/query.sql`: Berisi query untuk membaca data dari Data Source.
 - `query/dwh_design.sql`: Berisi query untuk mendesain skema di DWH.
 
---- 
+ 
 
 ## How To Run
 ### 1. Clone the repository
