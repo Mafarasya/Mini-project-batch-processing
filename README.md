@@ -20,11 +20,11 @@ ETL Batch Processing ini adalah sebuah proyek Python sederhana yang anggapannya 
 
 ## 📂 Struktur Proyek
 - query/ 
-    - query.sql # Query SQL untuk membaca data dari sumber 
-    - dwh_design.sql # Query untuk mendesain skema DWH 
-- main.py # Script utama ETL 
-- connection.py # Modul untuk koneksi ke database 
-- requirements.txt # Dependencies yang diperlukan untuk menjalankan proyek
+    - query.sql  ->  Query SQL untuk membaca data dari sumber 
+    - dwh_design.sql   ->  Query untuk mendesain skema DWH 
+- main.py   ->  Script utama ETL 
+- connection.py   ->  Modul untuk koneksi ke database 
+- requirements.txt   ->  Dependencies yang diperlukan untuk menjalankan proyek
 
 
 ## 🚀 Fitur
