@@ -85,3 +85,4 @@ This project is more than just building an ETL pipeline—it’s about understan
 - Explore the fundamentals of designing a data warehouse schema and implementing it in SQL.
 This mini-project is a stepping stone to mastering ETL workflows and preparing for real-world data engineering tasks!
 
+
