@@ -1,45 +1,29 @@
 # ETL Batch Processing - FTDE - Mini Project 1 
 
-ETL Batch Processing ini adalah sebuah proyek Python sederhana yang digunakan untuk mengekstrak, mentransformasi, dan memuat data ke data warehouse (DWH). Proyek ini mengautomasi proses ETL dalam bentuk batch, mendukung koneksi ke database PostgreSQL, dan memanfaatkan berbagai library seperti Pandas, SQLAlchemy, dan psycopg2 untuk memproses data dalam batch.
+This project demonstrates a simple implementation of ETL Batch Processing using Python. It is implements the Extract, Transform, Load (ETL) process to automate data workflows and load transformed data into a Data Warehouse (DWH). The project automates the ETL process in batches, supports PostgreSQL databases, and leverages powerful Python libraries like Pandas, SQLAlchemy, and psycopg2 to handle data processing efficiently. 
 
 
-## 🚀 Fitur
-- **Koneksi Database**: Mendukung koneksi ke database sumber dan DWH.
-- **Ekstraksi Data**: Membaca data menggunakan query SQL.
-- **Transformasi Data**: Menggunakan Pandas untuk manipulasi dan analisis data (dapat dikembangkan lebih lanjut).
-- **Ingestion ke DWH**: Memuat data hasil transformasi ke DWH.
+## 🚀 Key Features
+- **Database Connectivity**: Supports secure connections to both source databases and the DWH.
+- **Data Extraction**: Data is extracted from the source database using custom SQL queries provided in the query/query.sql file.
+- **Data Transformation**: Data is manipulated and transformed using Pandas, allowing for efficient cleaning and preparation of data before ingestion into the DWH (Flexible design to support additional transformation steps as required).
+- **Data Ingestion**: Transformed data is ingested into the DWH using SQLAlchemy for seamless integration with PostgreSQL.
 
 
-
-## 🛠️ Teknologi
+## 🛠️ Technologies Used
 - Python 3.12
 - Pandas
 - SQLAlchemy
 - SQLParse
   
 
-## 📂 Struktur Proyek
+## 📂 Project Structure
 - query/ 
-    - query.sql  ->  Query SQL untuk membaca data dari sumber 
-    - dwh_design.sql   ->  Query untuk mendesain skema DWH 
-- main.py   ->  Script utama ETL 
-- connection.py   ->  Modul untuk koneksi ke database 
-- requirements.txt   ->  Dependencies yang diperlukan untuk menjalankan proyek
-
-
-## 🚀 Fitur
-- **Koneksi Database**: Mendukung koneksi ke database sumber dan DWH.
-- **Ekstraksi Data**: Membaca data menggunakan query SQL.
-- **Transformasi Data**: Menggunakan Pandas untuk manipulasi dan analisis data (dapat dikembangkan lebih lanjut).
-- **Ingestion ke DWH**: Memuat data hasil transformasi ke DWH.
-
-
-
-## 🛠️ Teknologi
-- Python
-- Pandas
-- SQLAlchemy
-- SQLParse
+    - query.sql  ->  SQL queries for extracting data from the source database
+    - dwh_design.sql   ->  SQL script for defining the schema and tables in the Data Warehouse
+- main.py   ->  The main Python script for running the ETL process
+- connection.py   ->  Module for managing secure database connections
+- requirements.txt   ->  List of Python dependencies required for the project
 
 
 ### Jalankan script berikut untuk menginstall dependencies
@@ -48,11 +32,10 @@ pip install -r requirements.txt
 ```
 
 
-
-## ⚙️ Konfigurasi
-### 1.Buat file `config.json`
-File ini menyimpan informasi kredensial database dan diabaikan oleh Git. 
-Contoh formatnya adalah sebagai berikut:
+## ⚙️ Configuration
+### 1.Create a `config.json` File
+This file contains credentials for connecting to the source database and DWH. It is excluded from version control to maintain security.
+Example format:
 ```
 {
     "marketplace_prod": {
@@ -72,10 +55,9 @@ Contoh formatnya adalah sebagai berikut:
 }
 ```
 
-### 2. Pastikan file sql tersedia
-- `query/query.sql`: Berisi query untuk membaca data dari Data Source.
-- `query/dwh_design.sql`: Berisi query untuk mendesain skema di DWH.
-
+### 2. Prepare SQL Files
+- `query/query.sql`: Contains SQL queries to extract data from the source database.
+- `query/dwh_design.sql`: Contains SQL scripts for creating the schema and tables in the Data Warehouse.
  
 
 ## How To Run
@@ -84,9 +66,22 @@ Contoh formatnya adalah sebagai berikut:
 git clone https://github.com/Mafarasya/Mini-project-batch-processing.git
 cd Mini-project-batch-processing
 ```
-### 2. Execute the main script
+### 2.  Install Dependencies
+```
+pip install -r requirements.txt
+```
+### 3. Execute the ETL Script
 ```
 python main.py
 ```
 
-## This is readme_branch
+
+## 💡 Learning Outcomes
+This project is more than just building an ETL pipeline—it’s about understanding the core concepts of data engineering. Through this project, you will:
+- Learn how to connect to databases securely and manage credentials effectively.
+- Gain experience in extracting, transforming, and loading data using industry-standard tools like Pandas and SQLAlchemy.
+- Understand the importance of data quality and how to clean and validate data before ingestion.
+- Develop modular Python scripts that are easy to scale and maintain.
+- Explore the fundamentals of designing a data warehouse schema and implementing it in SQL.
+This mini-project is a stepping stone to mastering ETL workflows and preparing for real-world data engineering tasks!
+
